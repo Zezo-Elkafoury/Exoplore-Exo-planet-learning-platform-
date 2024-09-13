@@ -66,15 +66,25 @@ const HeroSection = ({ videoSrc }) => {
     }
   }, [controls, inView]);
 
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
   const textVariants = {
-    hidden: { opacity: 0, y: -50 },
+    hidden: { opacity: 0, y: '100vh' },
     visible: { 
       opacity: 1, 
       y: 0,
       transition: { 
         type: 'spring',
-        damping: 10,
-        stiffness: 100
+        damping: 12,
+        stiffness: 30,
+        duration: .5,
       }
     }
   };
@@ -88,12 +98,12 @@ const HeroSection = ({ videoSrc }) => {
         type: 'spring',
         damping: 12,
         stiffness: 100,
-        delay: 0.5
+        duration: 0.5 
       }
     },
     hover: { 
       scale: 1.05,
-      boxShadow: '0 0 15px rgba(138, 43, 226, 0.7)',
+      boxShadow: '0 0 20px rgba(138, 43, 226, 0.9)',
       transition: { 
         type: 'spring', 
         stiffness: 400, 
@@ -117,11 +127,16 @@ const HeroSection = ({ videoSrc }) => {
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-blue-400 via-transparent to-transparent z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-[#5a5c6c] via-transparent to-transparent z-10"></div>
 
-      <div className="relative z-20 flex flex-col items-center justify-center h-full text-white px-4 sm:px-6 lg:px-8">
+      <motion.div 
+        className="relative z-20 flex flex-col items-center justify-center h-full text-white px-4 sm:px-6 lg:px-8"
+        variants={containerVariants}
+        initial="hidden"
+        animate={controls}
+      >
         <motion.h1 
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-950 to-indigo-950"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-8 bg-gradient-to-r from-blue-200 to-indigo-100 text-transparent bg-clip-text"
           variants={textVariants}
           initial="hidden"
           animate={controls}
@@ -139,7 +154,7 @@ const HeroSection = ({ videoSrc }) => {
         >
           Begin Your Learning Journey
         </motion.button>
-      </div>
+      </motion.div>
     </div>
   );
 };
