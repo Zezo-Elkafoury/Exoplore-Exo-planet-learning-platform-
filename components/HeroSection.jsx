@@ -117,11 +117,11 @@ const HeroSection = ({ videoSrc }) => {
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#070F2B] via-transparent to-transparent z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-blue-400 via-transparent to-transparent z-10"></div>
 
       <div className="relative z-20 flex flex-col items-center justify-center h-full text-white px-4 sm:px-6 lg:px-8">
         <motion.h1 
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-indigo-600"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-950 to-indigo-950"
           variants={textVariants}
           initial="hidden"
           animate={controls}
@@ -130,7 +130,7 @@ const HeroSection = ({ videoSrc }) => {
         </motion.h1>
 
         <motion.button 
-          className="px-8 py-4 bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-semibold rounded-full shadow-lg transition duration-300 ease-in-out transform hover:from-violet-700 hover:to-indigo-700"
+          className="px-8 py-4 bg-gradient-to-r from-indigo-500 to-indigo-300 text-white font-semibold rounded-full shadow-lg transition duration-300 ease-in-out transform hover:from-violet-700 hover:to-indigo-700"
           variants={buttonVariants}
           initial="hidden"
           animate={controls}
