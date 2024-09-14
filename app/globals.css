@@ -2,26 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+* {
+    cursor: none !important;
   }
-}
+  
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  ::selection {
+    background-color: #1F87DD;
+    color: white;
   }
-}
+  
+  ::-moz-selection {
+    background-color: #1F87DD;
+    color: white;
+  }
+  
+  .use-default-cursor {
+    cursor: auto !important;
+  }
+  
+  
+  a, button, [role="button"], input[type="submit"], input[type="button"] {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  a:hover, button:hover, [role="button"]:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    transform: scale(1.05);
+  }
+  
+  a:active, button:active, [role="button"]:active, input[type="submit"]:active, input[type="button"]:active {
+    transform: scale(0.95);
+  }
