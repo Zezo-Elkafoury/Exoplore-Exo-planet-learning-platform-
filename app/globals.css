@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 * {
     cursor: none !important;
   }
@@ -32,4 +32,4 @@
   
   a:active, button:active, [role="button"]:active, input[type="submit"]:active, input[type="button"]:active {
     transform: scale(0.95);
-  }
+  } */
