@@ -1,17 +1,13 @@
-import localFont from "next/font/local";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
-import CustomCursor from "@/components/costumCursor";
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import CustomCursor from "@/components/CustomCursor";
+import InteractiveBackground from "@/components/fullbg";
+import { Exo } from 'next/font/google'
+
+const exo_init = Exo({ subsets: ['latin'] ,
+  weight: ['400']
+})
+
 
 export const metadata = {
   title: "Create Next App",
@@ -22,10 +18,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${exo_init.className}`}
       >
         <Analytics />
-        {/* <CustomCursor /> */}
+        <CustomCursor />
+        <InteractiveBackground />
         {children}
       </body>
     </html>

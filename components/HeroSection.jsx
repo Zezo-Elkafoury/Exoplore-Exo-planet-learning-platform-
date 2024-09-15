@@ -55,6 +55,22 @@ const StarField = () => {
   return <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full" />;
 };
 
+const GlitchText = ({ text }) => {
+  return (
+    <div className="relative inline-block">
+      <span className="relative z-10 text-blue-50 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+        {text}
+      </span>
+      <span className="absolute top-0 left-0 z-0 text-blue-300 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold opacity-70 blur-[2px] animate-pulse">
+        {text}
+      </span>
+      <span className="absolute -top-[2px] -left-[2px] z-0 text-red-300 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold opacity-70 blur-[2px] animate-pulse" style={{ animationDelay: '0.1s' }}>
+        {text}
+      </span>
+    </div>
+  );
+};
+
 const HeroSection = ({ videoSrc }) => {
   const controls = useAnimation();
   const ref = useRef(null);
@@ -89,30 +105,6 @@ const HeroSection = ({ videoSrc }) => {
     }
   };
 
-  const buttonVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { 
-      opacity: 1, 
-      y: 0,
-      transition: { 
-        type: 'spring',
-        damping: 12,
-        stiffness: 100,
-        duration: 0.5 
-      }
-    },
-    hover: { 
-      scale: 1.05,
-      boxShadow: '0 0 20px rgba(138, 43, 226, 0.9)',
-      transition: { 
-        type: 'spring', 
-        stiffness: 400, 
-        damping: 10 
-      }
-    },
-    tap: { scale: 0.95 }
-  };
-
   return (
     <div ref={ref} className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-[#070F2B] to-[#1A1B41]">
       <StarField />
@@ -127,7 +119,7 @@ const HeroSection = ({ videoSrc }) => {
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#5a5c6c] via-transparent to-transparent z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent z-10"></div>
 
       <motion.div 
         className="relative z-20 flex flex-col items-center justify-center h-full text-white px-4 sm:px-6 lg:px-8"
@@ -136,24 +128,17 @@ const HeroSection = ({ videoSrc }) => {
         animate={controls}
       >
         <motion.h1 
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-8 bg-gradient-to-r from-blue-200 to-indigo-100 text-transparent bg-clip-text"
+          className="text-center mb-8"
           variants={textVariants}
           initial="hidden"
           animate={controls}
         >
-          Welcome To The World Of Exoplanets
+          <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light bg-gradient-to-r from-blue-50 to-indigo-100 text-transparent bg-clip-text">
+            Welcome To The World Of
+          </span>
+          <br />
+          <GlitchText text="Exoplanets" />
         </motion.h1>
-
-        <motion.button 
-          className="px-8 py-4 bg-gradient-to-r from-indigo-500 to-indigo-300 text-white font-semibold rounded-full shadow-lg transition duration-300 ease-in-out transform hover:from-violet-700 hover:to-indigo-700"
-          variants={buttonVariants}
-          initial="hidden"
-          animate={controls}
-          whileHover="hover"
-          whileTap="tap"
-        >
-          Begin Your Learning Journey
-        </motion.button>
       </motion.div>
     </div>
   );

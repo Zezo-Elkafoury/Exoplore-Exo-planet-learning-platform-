@@ -56,21 +56,21 @@ const FeatureBox = ({ title, description, image, index }) => {
         scale,
         x: index % 2 === 0 ? xForward : xBackward
       }}
-      className="bg-white rounded-lg shadow-lg mb-16 overflow-hidden"
+      className="bg-indigo-100 rounded-lg shadow-lg mb-16 overflow-hidden"
     >
       <div className="flex flex-col md:flex-row">
         <motion.div 
           className={`md:w-1/2 p-6 ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}
         >
           <motion.h3 
-            className="text-2xl font-bold mb-4"
+            className="text-2xl font-bold mb-4 text-blue-700"
             style={{ x: titleX }}
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
           >
             {title}
           </motion.h3>
           <motion.p 
-            className="text-gray-600"
+            className="text-slate-600"
             style={{ x: descriptionX }}
             transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.1 }}
           >
@@ -88,7 +88,6 @@ const FeatureBox = ({ title, description, image, index }) => {
 
 const FeaturesSection = () => {
   const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({ target: containerRef });
   const isInView = useInView(containerRef, { once: true, amount: 0.1 });
 
   const titleY = useMotionValue(50);
@@ -106,7 +105,6 @@ const FeaturesSection = () => {
   const titleOpacitySpring = useSpring(titleOpacity, springConfig);
 
   return (
-    <SectionBackground>
       <div ref={containerRef} className="relative py-16">
         <div className="max-w-6xl mx-auto px-4">
           <motion.h1 
@@ -122,7 +120,6 @@ const FeaturesSection = () => {
           </div>
         </div>
       </div>
-    </SectionBackground>
   );
 };
 
