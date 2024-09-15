@@ -59,7 +59,7 @@ const AnimatedQuoteSection = () => {
                 className="text-3xl md:text-4xl font-serif italic mb-6"
                 variants={itemVariants}
               >
-                "That's one small step for a man, one giant leap for mankind"
+                &quot;That&apos;s one small step for a man, one giant leap for mankind&quot;
               </motion.blockquote>
               <motion.p 
                 className="text-xl mb-6"
