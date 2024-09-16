@@ -1,13 +1,23 @@
 'use client'
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { ChevronRight } from 'lucide-react';
 
-const AnimatedQuoteSection = () => {
+const QuoteSection = () => {
+  const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.2,
-    triggerOnce: true,
+    triggerOnce: false,
   });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -30,31 +40,31 @@ const AnimatedQuoteSection = () => {
   };
 
   return (
-    <div ref={ref} className="relative min-h-screen w-full overflow-hidden">
-
-
-      <div className="flex items-center justify-center p-4">
-        <motion.div
-          className="container mx-auto"
-          variants={containerVariants}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-        >
-          <div className="flex flex-col lg:flex-row items-center justify-between">
-            {/* Text Content */}
+    <div ref={ref} className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
+      <motion.div
+        className="container mx-auto px-4"
+        variants={containerVariants}
+        initial="hidden"
+        animate={controls}
+      >
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col lg:flex-row items-center justify-center mb-12">
+            {/* Image Content */}
             <motion.div 
               variants={itemVariants}
-              className="lg:w-1/2 flex justify-center"
+              className="lg:w-1/2 flex justify-center mb-8 lg:mb-0"
             >
               <motion.img
-                src="/qoute.jpg"
+                src="/quote.jpg"
                 alt="Author Name"
                 className="w-64 h-64 md:w-80 md:h-80 rounded-lg object-cover shadow-2xl"
                 whileHover={{ scale: 1.05, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
               />
             </motion.div>
-            <motion.div variants={itemVariants} className="lg:w-1/2 mb-8 lg:mb-0 text-white">
+            
+            {/* Text Content */}
+            <motion.div variants={itemVariants} className="text-white lg:w-1/2 text-center lg:text-left lg:pl-8">
               <motion.blockquote 
                 className="text-3xl md:text-4xl font-serif italic mb-6"
                 variants={itemVariants}
@@ -74,12 +84,22 @@ const AnimatedQuoteSection = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium 
               </motion.p>
             </motion.div>
-
           </div>
-        </motion.div>
-      </div>
+          
+          {/* Explore Exoplanets Button */}
+          <motion.button
+            variants={itemVariants}
+            className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition duration-300 ease-in-out transform hover:scale-105"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Explore Exoplanets
+            <ChevronRight className="ml-2" size={20} />
+          </motion.button>
+        </div>
+      </motion.div>
     </div>
   );
 };
 
-export default AnimatedQuoteSection;
+export default QuoteSection;

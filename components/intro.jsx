@@ -2,12 +2,14 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
-import SectionBackground from './Bg';
-const EnhancedVideoPlayer = () => {
+import { Play, Pause, Volume2, VolumeX, Maximize, Minimize } from 'lucide-react';
+
+const IntroVideo = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const videoRef = useRef(null);
+  const playerRef = useRef(null);
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -52,7 +54,7 @@ const EnhancedVideoPlayer = () => {
     },
     hover: { 
       scale: 1.05,
-      boxShadow: '0 0 20px rgba(138, 43, 226, 0.9)',
+      boxShadow: '0 0 20px rgba(255, 255, 226, 0.9)',
       transition: { 
         type: 'spring', 
         stiffness: 400, 
@@ -80,6 +82,25 @@ const EnhancedVideoPlayer = () => {
     }
   };
 
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      playerRef.current.requestFullscreen().catch(err => {
+        console.error(`Error attempting to enable fullscreen: ${err.message}`);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  };
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+  }, []);
+
   return (
     <div className="min-h-screen relative flex flex-col items-center justify-center p-8">
       <motion.div
@@ -95,7 +116,7 @@ const EnhancedVideoPlayer = () => {
           initial="initial"
           animate="animate"
         ></motion.div>
-        <div className="relative rounded-xl overflow-hidden shadow-2xl">
+        <div ref={playerRef} className="relative rounded-xl overflow-hidden shadow-2xl">
           <video
             ref={videoRef}
             className="w-full h-full object-cover"
@@ -106,32 +127,44 @@ const EnhancedVideoPlayer = () => {
           </video>
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>
           <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center">
+            <div className="flex gap-2">
+              <motion.button
+                variants={buttonVariants}
+                initial="initial"
+                whileHover="hover"
+                whileTap="tap"
+                onClick={togglePlay}
+                className="bg-white/20 backdrop-blur-sm text-white p-2 rounded-full"
+              >
+                {isPlaying ? <Pause size={24} /> : <Play size={24} />}
+              </motion.button>
+              <motion.button
+                variants={buttonVariants}
+                initial="initial"
+                whileHover="hover"
+                whileTap="tap"
+                onClick={toggleMute}
+                className="bg-white/20 backdrop-blur-sm text-white p-2 rounded-full"
+              >
+                {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
+              </motion.button>
+            </div>
             <motion.button
               variants={buttonVariants}
               initial="initial"
               whileHover="hover"
               whileTap="tap"
-              onClick={togglePlay}
+              onClick={toggleFullscreen}
               className="bg-white/20 backdrop-blur-sm text-white p-2 rounded-full"
             >
-              {isPlaying ? <Pause size={24} /> : <Play size={24} />}
-            </motion.button>
-            <motion.button
-              variants={buttonVariants}
-              initial="initial"
-              whileHover="hover"
-              whileTap="tap"
-              onClick={toggleMute}
-              className="bg-white/20 backdrop-blur-sm text-white p-2 rounded-full"
-            >
-              {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
+              {isFullscreen ? <Minimize size={24} /> : <Maximize size={24} />}
             </motion.button>
           </div>
         </div>
       </motion.div>
 
       <motion.button 
-          className="px-8 py-4 bg-gradient-to-r from-indigo-500 to-indigo-300 text-white font-semibold rounded-full shadow-lg transition duration-300 ease-in-out transform hover:from-violet-700 hover:to-indigo-700"
+          className="mt-8 px-8 py-4 bg-gradient-to-r from-indigo-500 to-indigo-300 text-white font-semibold rounded-full shadow-lg transition duration-300 ease-in-out transform hover:from-violet-700 hover:to-indigo-700"
           variants={buttonVariants}
           initial="hidden"
           animate={controls}
@@ -141,7 +174,8 @@ const EnhancedVideoPlayer = () => {
           Begin Your Learning Journey
         </motion.button>
     </div>
+
   );
 };
 
-export default EnhancedVideoPlayer;
+export default IntroVideo;
