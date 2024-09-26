@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import CustomCursor from "@/components/CustomCursor";
-import InteractiveBackground from "@/components/fullbg";
 import { Exo } from 'next/font/google'
 
 const exo_init = Exo({ subsets: ['latin'] ,
@@ -22,7 +21,6 @@ export default function RootLayout({ children }) {
       >
         <Analytics />
         <CustomCursor />
-        <InteractiveBackground />
         {children}
       </body>
     </html>
