@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-
+import Link from 'next/link'
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -44,13 +44,14 @@ const Header = () => {
           </div>
           
           <div className="hidden md:block">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-full transition-colors duration-200"
-            >
-              Get Started
-            </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-full mt-4 bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-full transition-colors duration-200"
+                onClick={() => setIsOpen(false)}
+              >
+                <Link href="levels/">Get Started</Link>
+              </motion.button>
           </div>
           
           <div className="md:hidden">
@@ -83,6 +84,7 @@ const Header = () => {
                   {item}
                 </a>
               ))}
+              <Link href="levels/">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -91,6 +93,7 @@ const Header = () => {
               >
                 Get Started
               </motion.button>
+              </Link>
             </div>
           </motion.div>
         )}

@@ -1,0 +1,69 @@
+[
+    {
+      "level": 1,
+      "title": "Introduction to Exoplanets",
+      "slides": [
+        {
+          "id": 1,
+          "content": [
+            {
+              "type": "text",
+              "value": "Welcome to the fascinating world of exoplanets! In this level, we'll explore what exoplanets are and why they're so exciting."
+            },
+            {
+              "type": "image",
+              "src": "/exo.jpeg",
+              "alt": "An artist's impression of an exoplanet"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "content": [
+            {
+              "type": "text",
+              "value": "Exoplanets are planets that orbit stars other than our Sun. They come in many different sizes and types."
+            },
+            {
+              "type": "image",
+              "src": "/exo.jpeg",
+              "alt": "Different types of exoplanets"
+            },
+            {
+              "type": "text",
+              "value": "From gas giants to rocky worlds like Earth, the variety is astounding!"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "content": [
+            {
+              "type": "video",
+              "src": "/videos/exoplanet-discovery.mp4"
+            },
+            {
+              "type": "text",
+              "value": "This video shows how scientists discover exoplanets using various methods."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "content": [
+            {
+              "type": "quiz",
+              "question": "What is an exoplanet?",
+              "options": [
+                "A planet in our solar system",
+                "A planet orbiting a star other than the Sun",
+                "A type of asteroid",
+                "A moon orbiting a gas giant"
+              ],
+              "correctAnswer": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]

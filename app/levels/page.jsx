@@ -8,10 +8,10 @@ const LevelsPage = () => {
   const [hoveredLevel, setHoveredLevel] = useState(null);
 
   const levels = [
-    { name: "Level 1", path: "/level1", difficulty: 1 },
-    { name: "Level 2", path: "/level2", difficulty: 2 },
-    { name: "Level 3", path: "/level3", difficulty: 3 },
-    { name: "Level 4", path: "/level4", difficulty: 4 },
+    { name: "Level 1", path: "/levels/1", difficulty: 1 },
+    { name: "Level 2", path: "/levels/2", difficulty: 2 },
+    { name: "Level 3", path: "/levels/3", difficulty: 3 },
+    { name: "Level 4", path: "/levels/4", difficulty: 4 },
   ];
 
   const containerVariants = {
