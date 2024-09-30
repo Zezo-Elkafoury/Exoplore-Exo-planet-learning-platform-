@@ -1,0 +1,102 @@
+[
+    {
+      "title": "Proxima Centauri b",
+      "image_url": "/image/Proxima Centauri b.jpg",
+      "short_description": "A rocky exoplanet orbiting Proxima Centauri, the closest star to the Sun, located about 4.24 light-years away in the habitable zone."
+    },
+    {
+      "title": "Kepler-452b",
+      "image_url": "/image/Kepler-452b.jpg",
+      "short_description": "Kepler-452b is a super-Earth orbiting a sun-like star, located 1,400 light-years away. It's one of the most Earth-like exoplanets found."
+    },
+    {
+      "title": "WASP-121b",
+      "image_url": "/image/WASP-121b.jpg",
+      "short_description": "WASP-121b is a gas giant exoplanet located 850 light-years away, with scorching temperatures high enough to evaporate metals."
+    },
+    {
+      "title": "HD 189733b",
+      "image_url": "/image/HD 189733b.png",
+      "short_description": "A gas giant with a blue color due to high-temperature clouds. It is located 64.5 light-years away and is known for its violent winds."
+    },
+    {
+      "title": "TRAPPIST-1e",
+      "image_url": "/image/TRAPPIST-1e.png",
+      "short_description": "One of the seven Earth-sized planets orbiting the TRAPPIST-1 star, TRAPPIST-1e is located in the habitable zone and may be a rocky world."
+    },
+    {
+      "title": "Gliese 581g",
+      "image_url": "/image/Gliese 581g.png",
+      "short_description": "Gliese 581g is a potentially habitable exoplanet located 20 light-years away. It resides in the habitable zone of the red dwarf star Gliese 581."
+    },
+    {
+      "title": "Kepler-186f",
+      "image_url": "/image/Kepler-186f.jpg",
+      "short_description": "Kepler-186f is an Earth-sized exoplanet located in its star's habitable zone, about 500 light-years away. It has the potential to harbor liquid water."
+    },
+    {
+      "title": "55 Cancri e",
+      "image_url": "/image/55 Cancri e.png",
+      "short_description": "55 Cancri e is a rocky exoplanet with a surface temperature exceeding 2,000°C. It's located 41 light-years away and is thought to have lava oceans."
+    },
+    {
+      "title": "LHS 1140b",
+      "image_url": "/image/LHS 1140b.jpg",
+      "short_description": "A super-Earth exoplanet located 40 light-years away, LHS 1140b lies in the habitable zone and may have an atmosphere suitable for life."
+    },
+    {
+      "title": "K2-18b",
+      "image_url": "/image/K2-18b.jpg",
+      "short_description": "K2-18b is a super-Earth exoplanet with potential for life, located 124 light-years away. It has water vapor in its atmosphere."
+    },
+    {
+      "title": "GJ 1214b",
+      "image_url": "/image/GJ 1214b.png",
+      "short_description": "GJ 1214b is a 'water world' exoplanet located 48 light-years away. It may have a thick atmosphere and is a prime target for atmospheric study."
+    },
+    {
+      "title": "HD 209458b",
+      "image_url": "/image/HD 209458b.png",
+      "short_description": "A gas giant exoplanet, HD 209458b was the first planet observed to have an atmosphere evaporating into space. It's located 159 light-years away."
+    },
+    {
+      "title": "Kepler-22b",
+      "image_url": "/image/Kepler-22b.jpg",
+      "short_description": "Kepler-22b is a super-Earth located 600 light-years away in the habitable zone. It may have a surface temperature conducive to liquid water."
+    },
+    {
+      "title": "HR 8799c",
+      "image_url": "/image/HR 8799c.png",
+      "short_description": "HR 8799c is a young, massive exoplanet about 130 light-years away. It's part of a multi-planet system and has been directly imaged."
+    },
+    {
+      "title": "PSR B1257+12 c",
+      "image_url": "/image/PSR B1257+12 c.png",
+      "short_description": "A pulsar planet, PSR B1257+12 c orbits a neutron star and is located about 2,300 light-years away. It was one of the first exoplanets discovered."
+    },
+    {
+      "title": "HD-189733b",
+      "image_url": "/image/HD-189733b.jpg",
+      "short_description": "HD 189733b is a deep blue gas giant located 64.5 light-years away. Its atmosphere features extreme winds and glass-like particles, causing sideways 'glass rain.'"
+    },
+    {
+      "title": "Kepler-438b",
+      "image_url": "/image/Kepler-438b.jpg",
+      "short_description": "Kepler-438b is a potentially habitable exoplanet 640 light-years away. It's similar in size to Earth and lies in its star's habitable zone."
+    },
+    {
+      "title": "OGLE-2005-BLG-390Lb",
+      "image_url": "/image/OGLE-2005-BLG-390Lb.jpg",
+      "short_description": "This icy, Earth-sized exoplanet is located about 21,500 light-years away. It's one of the most distant exoplanets discovered."
+    },
+    {
+      "title": "Tau Ceti e",
+      "image_url": "/image/Tau Ceti e.jpg",
+      "short_description": "Tau Ceti e is a super-Earth in the habitable zone of the star Tau Ceti, located 12 light-years away. It could potentially support life."
+    },
+    {
+      "title": "Kapteyn b",
+      "image_url": "/image/Kapteyn b.jpg",
+      "short_description": "Kapteyn b is a potentially habitable exoplanet located 13 light-years away. It orbits an ancient star, making it one of the oldest known planets."
+    }
+  ]
