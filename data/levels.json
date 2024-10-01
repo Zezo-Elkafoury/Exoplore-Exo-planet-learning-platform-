@@ -8,7 +8,7 @@
         "content": [
           {
             "type": "text",
-            "value": "Exoplanets, or extrasolar planets, are planets that orbit stars outside our solar system. They come in various sizes and types, ranging from small, rocky planets to large gas giants. Scientists have discovered thousands of exoplanets using advanced technology and methods. Studying these distant worlds helps us understand the universe better and explore the potential for life beyond Earth."
+            "value": "Welcome to the fascinating world of exoplanets! In this level, we'll explore what exoplanets are and why they're so exciting."
           },
           {
             "type": "image",
@@ -22,19 +22,46 @@
         "content": [
           {
             "type": "text",
-            "value": "Key Points:"
+            "value": "Exoplanets, or extrasolar planets, are planets that orbit stars outside our solar system. They come in various sizes and types, ranging from small, rocky planets to large gas giants."
+          },
+          {
+            "type": "image",
+            "src": "/exo_types.jpeg",
+            "alt": "Different types of exoplanets"
           },
           {
             "type": "text",
-            "value": "- Definition of exoplanets"
+            "value": "Scientists have discovered thousands of exoplanets using advanced technology and methods. Studying these distant worlds helps us understand the universe better and explore the potential for life beyond Earth."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "content": [
+          {
+            "type": "video",
+            "src": "https://www.youtube.com/watch?v=RJABvRkBD9U",
+            "caption": "What are exoplanets? Learn more in this introductory video."
           },
           {
             "type": "text",
-            "value": "- Importance of studying exoplanets"
-          },
+            "value": "This video gives an overview of exoplanets and how they differ from planets in our solar system."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "content": [
           {
-            "type": "text",
-            "value": "- Basic types of exoplanets"
+            "type": "quiz",
+            "question": "What is an exoplanet?",
+            "options": [
+              "A planet in our solar system",
+              "A planet orbiting a star other than the Sun",
+              "A type of asteroid",
+              "A moon orbiting a gas giant"
+            ],
+            "correctAnswer": 1
           }
         ]
       }
@@ -50,6 +77,11 @@
           {
             "type": "text",
             "value": "The discovery of exoplanets has revolutionized our understanding of the cosmos. Scientists employ several methods to identify these distant worlds."
+          },
+          {
+            "type": "image",
+            "src": "/discovery_methods.jpg",
+            "alt": "Illustration of exoplanet discovery methods"
           }
         ]
       },
@@ -58,19 +90,16 @@
         "content": [
           {
             "type": "text",
-            "value": "Transit Method: This involves monitoring the brightness of a star. When a planet passes in front of the star, it causes a slight dip in brightness, indicating its presence."
+            "value": "One of the most common techniques is the Transit Method, which involves monitoring the brightness of a star. When a planet passes in front of the star, it causes a slight dip in brightness."
+          },
+          {
+            "type": "image",
+            "src": "/transit_method.jpeg",
+            "alt": "Diagram of the Transit Method"
           },
           {
             "type": "text",
-            "value": "Radial Velocity: By observing the gravitational pull of a planet on its host star, scientists can detect subtle changes in the star’s spectrum."
-          },
-          {
-            "type": "text",
-            "value": "Direct Imaging: This method captures images of exoplanets by blocking out the star’s light, allowing us to study their atmospheres."
-          },
-          {
-            "type": "text",
-            "value": "Gravitational Microlensing: When a foreground star magnifies the light of a background star, it can reveal the presence of planets around the foreground star."
+            "value": "This method has helped scientists discover many exoplanets."
           }
         ]
       },
@@ -79,19 +108,32 @@
         "content": [
           {
             "type": "text",
-            "value": "Key Points:"
+            "value": "Other methods include Radial Velocity, Direct Imaging, and Gravitational Microlensing, each offering unique insights into exoplanets."
+          },
+          {
+            "type": "video",
+            "src": "https://www.youtube.com/watch?v=EUU0-ZpFoK4",
+            "caption": "Discover the different ways scientists find exoplanets."
           },
           {
             "type": "text",
-            "value": "- Overview of each discovery method"
-          },
+            "value": "In this video, you'll explore how scientists use various methods to discover exoplanets and the challenges involved in each technique."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "content": [
           {
-            "type": "text",
-            "value": "- Advantages and limitations of each method"
-          },
-          {
-            "type": "text",
-            "value": "- Notable missions that have contributed to exoplanet discovery"
+            "type": "quiz",
+            "question": "Which space telescope is famous for discovering thousands of exoplanets?",
+            "options": [
+              "Hubble Space Telescope",
+              "Kepler Space Telescope",
+              "James Webb Space Telescope",
+              "Chandra X-ray Observatory"
+            ],
+            "correctAnswer": 1
           }
         ]
       }
@@ -106,7 +148,12 @@
         "content": [
           {
             "type": "text",
-            "value": "Exoplanets come in a variety of forms, each with unique characteristics."
+            "value": "Exoplanets come in a variety of forms, each with unique characteristics. Let's explore some of the most common types of exoplanets."
+          },
+          {
+            "type": "image",
+            "src": "/exo_diversity.jpeg",
+            "alt": "An artist's depiction of various exoplanets"
           }
         ]
       },
@@ -115,23 +162,16 @@
         "content": [
           {
             "type": "text",
-            "value": "Gas Giants: Large planets composed mainly of hydrogen and helium, similar to Jupiter and Saturn."
+            "value": "Gas Giants are large planets composed mainly of hydrogen and helium, much like Jupiter and Saturn."
+          },
+          {
+            "type": "image",
+            "src": "/gas_giants.jpeg",
+            "alt": "Gas Giants"
           },
           {
             "type": "text",
-            "value": "Super-Earths: Rocky planets larger than Earth but smaller than Neptune, often found in the habitable zone."
-          },
-          {
-            "type": "text",
-            "value": "Ice Giants: Planets like Uranus and Neptune, characterized by thick atmospheres and icy compositions."
-          },
-          {
-            "type": "text",
-            "value": "Terrestrial Planets: Rocky planets similar to Earth, with solid surfaces and potential for life."
-          },
-          {
-            "type": "text",
-            "value": "Hot Jupiters: Gas giants that orbit very close to their stars, resulting in high temperatures."
+            "value": "Super-Earths are rocky planets larger than Earth but smaller than Neptune, often found in the habitable zone."
           }
         ]
       },
@@ -139,20 +179,29 @@
         "id": 3,
         "content": [
           {
-            "type": "text",
-            "value": "Key Points:"
+            "type": "video",
+            "src": "https://www.youtube.com/watch?v=gJ5R7JwCOmg",
+            "caption": "Learn about different types of exoplanets and their characteristics."
           },
           {
             "type": "text",
-            "value": "- Description of each type of exoplanet"
-          },
+            "value": "This video discusses the diversity of exoplanets, including Gas Giants, Super-Earths, Ice Giants, and Terrestrial Planets."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "content": [
           {
-            "type": "text",
-            "value": "- Examples of known exoplanets for each category"
-          },
-          {
-            "type": "text",
-            "value": "- Implications for the search for life"
+            "type": "quiz",
+            "question": "What does the term 'super-Earth' refer to?",
+            "options": [
+              "A planet larger than Earth but smaller than gas giants",
+              "A planet with multiple moons",
+              "A planet in the process of forming",
+              "An Earth-like planet with a breathable atmosphere"
+            ],
+            "correctAnswer": 0
           }
         ]
       }
@@ -167,7 +216,12 @@
         "content": [
           {
             "type": "text",
-            "value": "The study of exoplanets holds significant importance for several reasons."
+            "value": "The study of exoplanets holds great significance for our understanding of the universe."
+          },
+          {
+            "type": "image",
+            "src": "/importance_of_exoplanets.jpeg",
+            "alt": "Significance of exoplanet research"
           }
         ]
       },
@@ -176,19 +230,12 @@
         "content": [
           {
             "type": "text",
-            "value": "Search for Life: Identifying Earth-like planets in the habitable zone is crucial for astrobiology and the search for extraterrestrial life."
+            "value": "One of the key reasons to study exoplanets is the potential for discovering life on Earth-like planets in the habitable zone."
           },
           {
-            "type": "text",
-            "value": "Understanding Planet Formation: Studying exoplanets provides insights into how planetary systems form and evolve, expanding our knowledge of planetary dynamics."
-          },
-          {
-            "type": "text",
-            "value": "Comparative Planetology: By comparing exoplanets with those in our solar system, scientists can better understand the processes that shape planetary bodies."
-          },
-          {
-            "type": "text",
-            "value": "Future Prospects: Upcoming missions, such as the James Webb Space Telescope (JWST), are expected to enhance our ability to analyze exoplanet atmospheres and search for biosignatures."
+            "type": "image",
+            "src": "/goldilocks_zone.jpeg",
+            "alt": "The Goldilocks Zone"
           }
         ]
       },
@@ -196,20 +243,29 @@
         "id": 3,
         "content": [
           {
-            "type": "text",
-            "value": "Key Points:"
+            "type": "video",
+            "src": "https://www.youtube.com/watch?v=jxCVLVEv3nY",
+            "caption": "Explore the future of exoplanet research and its impact on astronomy."
           },
           {
             "type": "text",
-            "value": "- Summary of the significance of exoplanet research"
-          },
+            "value": "In this video, we discuss upcoming missions like the James Webb Space Telescope, which will enhance our ability to study exoplanet atmospheres and search for life."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "content": [
           {
-            "type": "text",
-            "value": "- Future missions and technologies in exoplanet exploration"
-          },
-          {
-            "type": "text",
-            "value": "- Potential implications for our understanding of the universe"
+            "type": "quiz",
+            "question": "What is the 'Goldilocks Zone'?",
+            "options": [
+              "A region around a star where conditions may be just right for life",
+              "A type of exoplanet",
+              "A method of detecting exoplanets",
+              "A specific star system"
+            ],
+            "correctAnswer": 0
           }
         ]
       }
