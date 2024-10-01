@@ -1,69 +1,218 @@
 [
-    {
-      "level": 1,
-      "title": "Introduction to Exoplanets",
-      "slides": [
-        {
-          "id": 1,
-          "content": [
-            {
-              "type": "text",
-              "value": "Welcome to the fascinating world of exoplanets! In this level, we'll explore what exoplanets are and why they're so exciting."
-            },
-            {
-              "type": "image",
-              "src": "/exo.jpeg",
-              "alt": "An artist's impression of an exoplanet"
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "content": [
-            {
-              "type": "text",
-              "value": "Exoplanets are planets that orbit stars other than our Sun. They come in many different sizes and types."
-            },
-            {
-              "type": "image",
-              "src": "/exo.jpeg",
-              "alt": "Different types of exoplanets"
-            },
-            {
-              "type": "text",
-              "value": "From gas giants to rocky worlds like Earth, the variety is astounding!"
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "content": [
-            {
-              "type": "video",
-              "src": "/videos/exoplanet-discovery.mp4"
-            },
-            {
-              "type": "text",
-              "value": "This video shows how scientists discover exoplanets using various methods."
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "content": [
-            {
-              "type": "quiz",
-              "question": "What is an exoplanet?",
-              "options": [
-                "A planet in our solar system",
-                "A planet orbiting a star other than the Sun",
-                "A type of asteroid",
-                "A moon orbiting a gas giant"
-              ],
-              "correctAnswer": 1
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  {
+    "level": 1,
+    "title": "Introduction to Exoplanets",
+    "slides": [
+      {
+        "id": 1,
+        "content": [
+          {
+            "type": "text",
+            "value": "Exoplanets, or extrasolar planets, are planets that orbit stars outside our solar system. They come in various sizes and types, ranging from small, rocky planets to large gas giants. Scientists have discovered thousands of exoplanets using advanced technology and methods. Studying these distant worlds helps us understand the universe better and explore the potential for life beyond Earth."
+          },
+          {
+            "type": "image",
+            "src": "/exo.jpeg",
+            "alt": "An artist's impression of an exoplanet"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "content": [
+          {
+            "type": "text",
+            "value": "Key Points:"
+          },
+          {
+            "type": "text",
+            "value": "- Definition of exoplanets"
+          },
+          {
+            "type": "text",
+            "value": "- Importance of studying exoplanets"
+          },
+          {
+            "type": "text",
+            "value": "- Basic types of exoplanets"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": 2,
+    "title": "Discovery Methods",
+    "slides": [
+      {
+        "id": 1,
+        "content": [
+          {
+            "type": "text",
+            "value": "The discovery of exoplanets has revolutionized our understanding of the cosmos. Scientists employ several methods to identify these distant worlds."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "content": [
+          {
+            "type": "text",
+            "value": "Transit Method: This involves monitoring the brightness of a star. When a planet passes in front of the star, it causes a slight dip in brightness, indicating its presence."
+          },
+          {
+            "type": "text",
+            "value": "Radial Velocity: By observing the gravitational pull of a planet on its host star, scientists can detect subtle changes in the star’s spectrum."
+          },
+          {
+            "type": "text",
+            "value": "Direct Imaging: This method captures images of exoplanets by blocking out the star’s light, allowing us to study their atmospheres."
+          },
+          {
+            "type": "text",
+            "value": "Gravitational Microlensing: When a foreground star magnifies the light of a background star, it can reveal the presence of planets around the foreground star."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "content": [
+          {
+            "type": "text",
+            "value": "Key Points:"
+          },
+          {
+            "type": "text",
+            "value": "- Overview of each discovery method"
+          },
+          {
+            "type": "text",
+            "value": "- Advantages and limitations of each method"
+          },
+          {
+            "type": "text",
+            "value": "- Notable missions that have contributed to exoplanet discovery"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": 3,
+    "title": "Types of Exoplanets",
+    "slides": [
+      {
+        "id": 1,
+        "content": [
+          {
+            "type": "text",
+            "value": "Exoplanets come in a variety of forms, each with unique characteristics."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "content": [
+          {
+            "type": "text",
+            "value": "Gas Giants: Large planets composed mainly of hydrogen and helium, similar to Jupiter and Saturn."
+          },
+          {
+            "type": "text",
+            "value": "Super-Earths: Rocky planets larger than Earth but smaller than Neptune, often found in the habitable zone."
+          },
+          {
+            "type": "text",
+            "value": "Ice Giants: Planets like Uranus and Neptune, characterized by thick atmospheres and icy compositions."
+          },
+          {
+            "type": "text",
+            "value": "Terrestrial Planets: Rocky planets similar to Earth, with solid surfaces and potential for life."
+          },
+          {
+            "type": "text",
+            "value": "Hot Jupiters: Gas giants that orbit very close to their stars, resulting in high temperatures."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "content": [
+          {
+            "type": "text",
+            "value": "Key Points:"
+          },
+          {
+            "type": "text",
+            "value": "- Description of each type of exoplanet"
+          },
+          {
+            "type": "text",
+            "value": "- Examples of known exoplanets for each category"
+          },
+          {
+            "type": "text",
+            "value": "- Implications for the search for life"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": 4,
+    "title": "Significance and Future Prospects",
+    "slides": [
+      {
+        "id": 1,
+        "content": [
+          {
+            "type": "text",
+            "value": "The study of exoplanets holds significant importance for several reasons."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "content": [
+          {
+            "type": "text",
+            "value": "Search for Life: Identifying Earth-like planets in the habitable zone is crucial for astrobiology and the search for extraterrestrial life."
+          },
+          {
+            "type": "text",
+            "value": "Understanding Planet Formation: Studying exoplanets provides insights into how planetary systems form and evolve, expanding our knowledge of planetary dynamics."
+          },
+          {
+            "type": "text",
+            "value": "Comparative Planetology: By comparing exoplanets with those in our solar system, scientists can better understand the processes that shape planetary bodies."
+          },
+          {
+            "type": "text",
+            "value": "Future Prospects: Upcoming missions, such as the James Webb Space Telescope (JWST), are expected to enhance our ability to analyze exoplanet atmospheres and search for biosignatures."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "content": [
+          {
+            "type": "text",
+            "value": "Key Points:"
+          },
+          {
+            "type": "text",
+            "value": "- Summary of the significance of exoplanet research"
+          },
+          {
+            "type": "text",
+            "value": "- Future missions and technologies in exoplanet exploration"
+          },
+          {
+            "type": "text",
+            "value": "- Potential implications for our understanding of the universe"
+          }
+        ]
+      }
+    ]
+  }
+]
