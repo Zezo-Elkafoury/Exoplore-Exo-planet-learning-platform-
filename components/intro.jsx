@@ -120,7 +120,7 @@ const IntroVideo = () => {
           <video
             ref={videoRef}
             className="w-full h-full object-cover"
-            src="/vid1.mp4"
+            src="/Media1.mp4"
             loop
           >
             Your browser does not support the video tag.
