@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+  const [navhidden, setnavhidden] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -15,7 +15,7 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const menuItems = ['Features', 'Contact Us', 'About Us'];
+const menuItems = [{title:'Features',href:'#features'}, {title:'Levels',href:'/levels'}, {title:'Gallery',href:'/gallery'},{title:'Planet Finder',href:'planet-finder'},{title:'About',href:'#features'}]
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'py-2' : 'py-4'}`}>
@@ -32,13 +32,13 @@ const Header = () => {
           <div className="hidden md:flex space-x-6">
             {menuItems.map((item) => (
               <motion.a
-                key={item}
-                href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
+                key={item.title}
+                href={item.href}
                 className="hover:text-indigo-300 transition-colors duration-200"
                 whileHover={{ y: -2 }}
                 whileTap={{ y: 0 }}
               >
-                {item}
+                {item.title}
               </motion.a>
             ))}
           </div>
@@ -47,7 +47,7 @@ const Header = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full mt-4 bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-full transition-colors duration-200"
+                className="w-full m-4 bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-full transition-colors duration-200"
                 onClick={() => setIsOpen(false)}
               >
                 <Link href="levels/">Get Started</Link>
