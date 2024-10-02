@@ -116,8 +116,7 @@ export default function SearchPage() {
               >
                 <span className="font-bold">{planet.pl_name}</span>: Distance = {" "}
                 {planet.distance}, Radius = {planet.radius}, Orbital Period = {" "}
-                {planet["orbital period"]}, Distance = {" "}
-                {planet.distance},
+                {planet["orbital period"]}
               </li>
             ))}
           </ul>
