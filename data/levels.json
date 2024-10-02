@@ -1,271 +1,98 @@
 [
   {
     "level": 1,
-    "title": "Introduction to Exoplanets",
+    "title": "Introduction ",
     "slides": [
       {
         "id": 1,
         "content": [
-          {
-            "type": "text",
-            "value": "Welcome to the fascinating world of exoplanets! In this level, we'll explore what exoplanets are and why they're so exciting."
-          },
-          {
-            "type": "image",
-            "src": "/exo.jpeg",
-            "alt": "An artist's impression of an exoplanet"
-          }
+          { "type": "text", "value": "Space exploration helps us understand the universe and our place within it." },
+          { "type": "text", "value": "The view of Earth from space gives us perspective on the fragility and uniqueness of our planet." }
         ]
       },
       {
         "id": 2,
         "content": [
-          {
-            "type": "text",
-            "value": "Exoplanets, or extrasolar planets, are planets that orbit stars outside our solar system. They come in various sizes and types, ranging from small, rocky planets to large gas giants."
-          },
-          {
-            "type": "image",
-            "src": "/exo_types.jpeg",
-            "alt": "Different types of exoplanets"
-          },
-          {
-            "type": "text",
-            "value": "Scientists have discovered thousands of exoplanets using advanced technology and methods. Studying these distant worlds helps us understand the universe better and explore the potential for life beyond Earth."
-          }
+          { "type": "text", "value": "Studying space drives technological innovations that benefit our daily lives." },
+          { "type": "image", "src": "/exo.jpeg", "alt": "Satellites orbiting Earth." }
         ]
       },
       {
         "id": 3,
         "content": [
-          {
-            "type": "video",
-            "src": "https://www.youtube.com/watch?v=RJABvRkBD9U",
-            "caption": "What are exoplanets? Learn more in this introductory video."
-          },
-          {
-            "type": "text",
-            "value": "This video gives an overview of exoplanets and how they differ from planets in our solar system."
-          }
+          { "type": "text", "value": "The universe is vast, containing billions of galaxies, stars, and planets." },
+          { "type": "text", "value": "These celestial bodies each hold important clues to the origins of the universe." }
         ]
       },
       {
         "id": 4,
         "content": [
-          {
-            "type": "quiz",
-            "question": "What is an exoplanet?",
-            "options": [
-              "A planet in our solar system",
-              "A planet orbiting a star other than the Sun",
-              "A type of asteroid",
-              "A moon orbiting a gas giant"
-            ],
+          { "type": "text", "value": "Space is a vacuum, mostly empty but filled with mysteries like black holes and dark matter." }
+        ]
+      },
+      {
+        "id": 5,
+        "content": [
+          { "type": "video", "src": "/levels/What is the Universe.mp4" },
+          { "type": "text", "value": "Watch this video to learn about the scale of the universe." }
+        ]
+      },
+      {
+        "id": 6,
+        "content": [
+          { "type": "text", "value": "Exoplanets are planets that orbit stars outside our solar system." },
+          { "type": "text", "value": "These distant worlds vary greatly in size, composition, and distance from their stars." }
+        ]
+      },
+      {
+        "id": 7,
+        "content": [
+          { "type": "text", "value": "There are thousands of confirmed exoplanets, with new ones being discovered regularly." }
+        ]
+      },
+      {
+        "id": 8,
+        "content": [
+          { "type": "text", "value": "Studying exoplanets helps us understand planetary systems and conditions for life elsewhere." },
+          { "type": "text", "value": "Some exoplanets might even have the right conditions to support life." }
+        ]
+      },
+      {
+        "id": 9,
+        "content": [
+          { "type": "quiz",
+            "question": "Why are exoplanets important to study?",
+            "options": ["They are in our solar system", "They help us understand the universe", "They are close to Earth", "They are smaller than Earth"],
             "correctAnswer": 1
           }
         ]
-      }
-    ]
-  },
-  {
-    "level": 2,
-    "title": "Discovery Methods",
-    "slides": [
+      },
       {
-        "id": 1,
+        "id": 10,
         "content": [
-          {
-            "type": "text",
-            "value": "The discovery of exoplanets has revolutionized our understanding of the cosmos. Scientists employ several methods to identify these distant worlds."
-          },
-          {
-            "type": "image",
-            "src": "/discovery_methods.jpg",
-            "alt": "Illustration of exoplanet discovery methods"
-          }
+          { "type": "text", "value": "One of the most interesting exoplanets discovered is Kepler-452b, located in the habitable zone of its star." }
         ]
       },
       {
-        "id": 2,
+        "id": 11,
         "content": [
-          {
-            "type": "text",
-            "value": "One of the most common techniques is the Transit Method, which involves monitoring the brightness of a star. When a planet passes in front of the star, it causes a slight dip in brightness."
-          },
-          {
-            "type": "image",
-            "src": "/transit_method.jpeg",
-            "alt": "Diagram of the Transit Method"
-          },
-          {
-            "type": "text",
-            "value": "This method has helped scientists discover many exoplanets."
-          }
+          { "type": "text", "value": "Kepler-452b is sometimes called Earth’s 'cousin' due to its similar size and distance from its star." }
         ]
       },
       {
-        "id": 3,
+        "id": 12,
         "content": [
-          {
-            "type": "text",
-            "value": "Other methods include Radial Velocity, Direct Imaging, and Gravitational Microlensing, each offering unique insights into exoplanets."
-          },
-          {
-            "type": "video",
-            "src": "https://www.youtube.com/watch?v=EUU0-ZpFoK4",
-            "caption": "Discover the different ways scientists find exoplanets."
-          },
-          {
-            "type": "text",
-            "value": "In this video, you'll explore how scientists use various methods to discover exoplanets and the challenges involved in each technique."
-          }
+          { "type": "video", "src": "/path_to_kepler452b_video.mp4" },
+          { "type": "text", "value": "Watch this video about Kepler-452b's discovery and significance." }
         ]
       },
       {
-        "id": 4,
+        "id": 13,
         "content": [
-          {
-            "type": "quiz",
-            "question": "Which space telescope is famous for discovering thousands of exoplanets?",
-            "options": [
-              "Hubble Space Telescope",
-              "Kepler Space Telescope",
-              "James Webb Space Telescope",
-              "Chandra X-ray Observatory"
-            ],
-            "correctAnswer": 1
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "level": 3,
-    "title": "Types of Exoplanets",
-    "slides": [
-      {
-        "id": 1,
-        "content": [
-          {
-            "type": "text",
-            "value": "Exoplanets come in a variety of forms, each with unique characteristics. Let's explore some of the most common types of exoplanets."
-          },
-          {
-            "type": "image",
-            "src": "/exo_diversity.jpeg",
-            "alt": "An artist's depiction of various exoplanets"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "content": [
-          {
-            "type": "text",
-            "value": "Gas Giants are large planets composed mainly of hydrogen and helium, much like Jupiter and Saturn."
-          },
-          {
-            "type": "image",
-            "src": "/gas_giants.jpeg",
-            "alt": "Gas Giants"
-          },
-          {
-            "type": "text",
-            "value": "Super-Earths are rocky planets larger than Earth but smaller than Neptune, often found in the habitable zone."
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "content": [
-          {
-            "type": "video",
-            "src": "https://www.youtube.com/watch?v=gJ5R7JwCOmg",
-            "caption": "Learn about different types of exoplanets and their characteristics."
-          },
-          {
-            "type": "text",
-            "value": "This video discusses the diversity of exoplanets, including Gas Giants, Super-Earths, Ice Giants, and Terrestrial Planets."
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "content": [
-          {
-            "type": "quiz",
-            "question": "What does the term 'super-Earth' refer to?",
-            "options": [
-              "A planet larger than Earth but smaller than gas giants",
-              "A planet with multiple moons",
-              "A planet in the process of forming",
-              "An Earth-like planet with a breathable atmosphere"
-            ],
-            "correctAnswer": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "level": 4,
-    "title": "Significance and Future Prospects",
-    "slides": [
-      {
-        "id": 1,
-        "content": [
-          {
-            "type": "text",
-            "value": "The study of exoplanets holds great significance for our understanding of the universe."
-          },
-          {
-            "type": "image",
-            "src": "/importance_of_exoplanets.jpeg",
-            "alt": "Significance of exoplanet research"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "content": [
-          {
-            "type": "text",
-            "value": "One of the key reasons to study exoplanets is the potential for discovering life on Earth-like planets in the habitable zone."
-          },
-          {
-            "type": "image",
-            "src": "/goldilocks_zone.jpeg",
-            "alt": "The Goldilocks Zone"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "content": [
-          {
-            "type": "video",
-            "src": "https://www.youtube.com/watch?v=jxCVLVEv3nY",
-            "caption": "Explore the future of exoplanet research and its impact on astronomy."
-          },
-          {
-            "type": "text",
-            "value": "In this video, we discuss upcoming missions like the James Webb Space Telescope, which will enhance our ability to study exoplanet atmospheres and search for life."
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "content": [
-          {
-            "type": "quiz",
-            "question": "What is the 'Goldilocks Zone'?",
-            "options": [
-              "A region around a star where conditions may be just right for life",
-              "A type of exoplanet",
-              "A method of detecting exoplanets",
-              "A specific star system"
-            ],
-            "correctAnswer": 0
+          { "type": "quiz",
+            "question": "Why is Kepler-452b considered special?",
+            "options": ["It is larger than Earth", "It orbits a star similar to the Sun", "It is in the habitable zone", "All of the above"],
+            "correctAnswer": 3
           }
         ]
       }
