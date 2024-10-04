@@ -10,7 +10,7 @@ import InteractiveBackground from "@/components/fullbg";
 export default function Home() {
   return (
     <>
-          <Header />
+          {/* <Header /> */}
           <InteractiveBackground />
           <HeroSection videoSrc="/vid1.mp4" />
           <IntroVideo />

@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Play, Pause, Volume2, VolumeX, Maximize, Minimize } from 'lucide-react';
-
+import Link from 'next/link'
 const IntroVideo = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
@@ -162,7 +162,7 @@ const IntroVideo = () => {
           </div>
         </div>
       </motion.div>
-
+      <Link href="/levels">
       <motion.button 
           className="mt-8 px-8 py-4 bg-gradient-to-r from-indigo-500 to-indigo-300 text-white font-semibold rounded-full shadow-lg transition duration-300 ease-in-out transform hover:from-violet-700 hover:to-indigo-700"
           variants={buttonVariants}
@@ -173,6 +173,7 @@ const IntroVideo = () => {
         >
           Begin Your Learning Journey
         </motion.button>
+        </Link>
     </div>
 
   );

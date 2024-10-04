@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ChevronRight } from 'lucide-react';
+import Link from 'next/link'
 
 const QuoteSection = () => {
   const controls = useAnimation();
@@ -49,7 +50,6 @@ const QuoteSection = () => {
       >
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col lg:flex-row items-center justify-center mb-12">
-            {/* Image Content */}
             <motion.div 
               variants={itemVariants}
               className="lg:w-1/2 flex justify-center mb-8 lg:mb-0"
@@ -63,7 +63,6 @@ const QuoteSection = () => {
               />
             </motion.div>
             
-            {/* Text Content */}
             <motion.div variants={itemVariants} className="text-white lg:w-1/2 text-center lg:text-left lg:pl-8">
               <motion.blockquote 
                 className="text-3xl md:text-4xl font-serif italic mb-6"
@@ -86,7 +85,8 @@ const QuoteSection = () => {
             </motion.div>
           </div>
           
-          {/* Explore Exoplanets Button */}
+          <Link href="/levels">
+
           <motion.button
             variants={itemVariants}
             className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition duration-300 ease-in-out transform hover:scale-105"
@@ -95,7 +95,9 @@ const QuoteSection = () => {
           >
             Explore Exoplanets
             <ChevronRight className="ml-2" size={20} />
-          </motion.button>
+          </motion.button>          
+          </Link>
+
         </div>
       </motion.div>
     </div>
