@@ -5,17 +5,17 @@ import FeaturesSection from "@/components/features";
 import IntroVideo from '@/components/intro';
 import QuoteSection from "@/components/qoute";
 import InteractiveBackground from "@/components/fullbg";
-
+import CreditsSection from "@/components/Credits"
 
 export default function Home() {
   return (
     <>
-          {/* <Header /> */}
           <InteractiveBackground />
-          <HeroSection videoSrc="/vid1.mp4" />
+          <HeroSection />
           <IntroVideo />
           <FeaturesSection />
           <QuoteSection />
+          <CreditsSection />
     </>
   );
 }

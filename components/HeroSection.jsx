@@ -2,58 +2,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 
-const StarField = () => {
-  const canvasRef = useRef(null);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    const stars = [];
-    const starCount = 200;
-
-    for (let i = 0; i < starCount; i++) {
-      stars.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        size: Math.random() * 2,
-        speed: Math.random() * 0.5 + 0.1,
-      });
-    }
-
-    function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
-
-      stars.forEach((star) => {
-        ctx.beginPath();
-        ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
-        ctx.fill();
-
-        star.y += star.speed;
-        if (star.y > canvas.height) {
-          star.y = 0;
-        }
-      });
-
-      requestAnimationFrame(animate);
-    }
-
-    animate();
-
-    const handleResize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  return <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full" />;
-};
 
 const GlitchText = ({ text }) => {
   return (
@@ -71,7 +19,7 @@ const GlitchText = ({ text }) => {
   );
 };
 
-const HeroSection = ({ videoSrc }) => {
+const HeroSection = () => {
   const controls = useAnimation();
   const ref = useRef(null);
   const inView = useInView(ref);
@@ -106,20 +54,7 @@ const HeroSection = ({ videoSrc }) => {
   };
 
   return (
-    <div ref={ref} className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-[#070F2B] to-[#1A1B41]">
-      <StarField />
-      
-      <video
-        autoPlay
-        loop
-        muted
-        className="absolute top-0 left-0 min-w-full min-h-full object-cover z-0 opacity-60"
-      >
-        <source src={videoSrc} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent z-10"></div>
+    <div ref={ref} className="relative h-[calc(100vh-80px)] w-full overflow-hidden ">
 
       <motion.div 
         className="relative z-20 flex flex-col items-center justify-center h-full text-white px-4 sm:px-6 lg:px-8"

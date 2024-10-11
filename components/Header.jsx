@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 const menuItems = [
-  { title: 'Features', href: '/#features' },
   { title: 'Levels', href: '/levels' },
   { title: 'Gallery', href: '/gallery' },
   { title: 'Imagine Planet', href: '/imagine' }

@@ -49,7 +49,7 @@ const LevelsPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-600 to-stone-700 flex justify-center items-center p-8">
+    <div className="min-h-screen bg-gradient-to-b from-black via-slate-600 to-stone-700 flex justify-center items-center p-8">
       <motion.div
         className="bg-black bg-opacity-50 rounded-3xl p-8 backdrop-blur-lg"
         variants={containerVariants}

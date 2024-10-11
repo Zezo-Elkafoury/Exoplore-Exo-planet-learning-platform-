@@ -76,12 +76,7 @@ const QuoteSection = () => {
               >
                 - Neil Alden Armstrong 
               </motion.p>
-              <motion.p 
-                className="text-lg"
-                variants={itemVariants}
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium 
-              </motion.p>
+
             </motion.div>
           </div>
           
