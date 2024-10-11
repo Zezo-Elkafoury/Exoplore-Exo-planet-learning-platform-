@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-/* @import 'locomotive-scroll/dist/locomotive-scroll.css'; */
 ::-webkit-scrollbar {
 	height: 5px;
 	width: 5px;
