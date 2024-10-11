@@ -37,7 +37,7 @@ const NotFound = () => {
         <p className="text-2xl text-blue-300 mb-8">It seems that we have a problem!</p>
         <div className="space-y-4">
           <p className="text-xl text-gray-300">Maybe This page is not here yet.</p>
-          <p className="text-xl text-gray-300">We're trying our best to make it soon!</p>
+          <p className="text-xl text-gray-300">We&apos;re trying our best to make it soon!</p>
         </div>
         <div className="mt-12">
           <Link
