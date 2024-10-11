@@ -20,18 +20,11 @@ const teamMembers = [
   },
     {
     name: 'Ahmed Hossam',
-    linkedin: 'https://www.linkedin.com/in/',
+    linkedin: 'https://www.linkedin.com/in/ahmed-hossam-42255027a/',
     role: 'Content Writer',
     description: "Some of the website's content was written by Ahmed.",
     image: '/'
   },
-  {
-    name: 'Niema Nabil',
-    linkedin: 'https://www.linkedin.com/in/',
-    description: 'Thanks for her ideas and suggestions',
-    image: '/'
-  },
-
 ];
 
 
