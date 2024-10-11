@@ -12,11 +12,11 @@ const teamMembers = [
     image: '/team/obay.jpg'
   },
   {
-    name: 'Ziad Ahmed',
-    linkedin: 'https://www.linkedin.com/in/ziad-ahmed-mohamed-elkafoury',
-    role: 'Data Analyst',
-    description: 'Ziad handled the backend of the "Imagine a planet" tool and was in charge of data analysis.',
-    image: '/team/ziad.jpg'
+    name: 'Ziad Elkafoury',
+    linkedin:' https://www.linkedin.com/in/ziad-elkafoury',
+    role: 'Data Scientist & Backend Developer',
+    description: 'Ziad handled all data-related tasks, including data gathering, processing, and visualization. He also created the backend for the "Imagine a Planet" tool.', 
+    image:'/team/ziad.jpeg'
   },
     {
     name: 'Ahmed Hossam',
