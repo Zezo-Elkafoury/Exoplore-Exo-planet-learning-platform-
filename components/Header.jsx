@@ -6,7 +6,10 @@ import { useRouter } from 'next/navigation';
 const menuItems = [
   { title: 'Levels', href: '/levels' },
   { title: 'Gallery', href: '/gallery' },
-  { title: 'Imagine Planet', href: '/imagine' }
+  { title: 'Imagine Planet', href: '/imagine' },
+  { title: 'Habitability Score', href: '/h-score' },
+  { title: 'Gravity Quest', href: '/gravity-game' },
+
 ];
 
 const Header = () => {
