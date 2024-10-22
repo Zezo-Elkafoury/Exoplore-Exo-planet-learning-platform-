@@ -1,231 +1,101 @@
 [
-  {
+    {
       "level": 1,
-      "title": "Introduction to Exoplanets",
+      "title": "Introduction ",
       "slides": [
-          {
-              "id": 1,
-              "content": [
-                  {
-                      "type": "video",
-                      "src": "/videos/exoplanet-discovery.mp4"
-                  },
-                  {
-                      "type": "text",
-                      "value": "Watch this video to learn how scientists discover exoplanets using various methods."
-                  }
-              ]
-          },
-          {
-              "id": 2,
-              "content": [
-                  {
-                      "type": "image",
-                      "src": "/images/exoplanet_impression.jpg",
-                      "alt": "An artist's impression of an exoplanet"
-                  },
-                  {
-                      "type": "text",
-                      "value": "Exoplanets are diverse, ranging from gas giants to rocky planets. This artist's impression showcases one possibility."
-                  }
-              ]
-          },
-          {
-              "id": 3,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "Exoplanets are planets that orbit stars outside our solar system. Their study helps us understand the universe and the potential for life beyond Earth."
-                  }
-              ]
-          },
-          {
-              "id": 4,
-              "content": [
-                  {
-                      "type": "quiz",
-                      "question": "What is an exoplanet?",
-                      "options": [
-                          "A planet in our solar system",
-                          "A planet orbiting a star other than the Sun",
-                          "A type of asteroid",
-                          "A moon orbiting a gas giant"
-                      ],
-                      "correctAnswer": 1
-                  }
-              ]
-          }
+        {
+          "id": 1,
+          "content": [
+            { "type": "text", "value": "Space exploration helps us understand the universe and our place within it." },
+            { "type": "text", "value": "The view of Earth from space gives us perspective on the fragility and uniqueness of our planet." }
+          ]
+        },
+        {
+          "id": 2,
+          "content": [
+            { "type": "text", "value": "Studying space drives technological innovations that benefit our daily lives." },
+            { "type": "image", "src": "/exo.jpeg", "alt": "Satellites orbiting Earth." }
+          ]
+        },
+        {
+          "id": 3,
+          "content": [
+            { "type": "text", "value": "The universe is vast, containing billions of galaxies, stars, and planets." },
+            { "type": "text", "value": "These celestial bodies each hold important clues to the origins of the universe." }
+          ]
+        },
+        {
+          "id": 4,
+          "content": [
+            { "type": "text", "value": "Space is a vacuum, mostly empty but filled with mysteries like black holes and dark matter." }
+          ]
+        },
+        {
+          "id": 5,
+          "content": [
+            { "type": "video", "src": "/levels/What is the Universe.mp4" },
+            { "type": "text", "value": "Watch this video to learn about the scale of the universe." }
+          ]
+        },
+        {
+          "id": 6,
+          "content": [
+            { "type": "text", "value": "Exoplanets are planets that orbit stars outside our solar system." },
+            { "type": "text", "value": "These distant worlds vary greatly in size, composition, and distance from their stars." }
+          ]
+        },
+        {
+          "id": 7,
+          "content": [
+            { "type": "text", "value": "There are thousands of confirmed exoplanets, with new ones being discovered regularly." }
+          ]
+        },
+        {
+          "id": 8,
+          "content": [
+            { "type": "text", "value": "Studying exoplanets helps us understand planetary systems and conditions for life elsewhere." },
+            { "type": "text", "value": "Some exoplanets might even have the right conditions to support life." }
+          ]
+        },
+        {
+          "id": 9,
+          "content": [
+            { "type": "quiz",
+              "question": "Why are exoplanets important to study?",
+              "options": ["They are in our solar system", "They help us understand the universe", "They are close to Earth", "They are smaller than Earth"],
+              "correctAnswer": 1
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "content": [
+            { "type": "text", "value": "One of the most interesting exoplanets discovered is Kepler-452b, located in the habitable zone of its star." }
+          ]
+        },
+        {
+          "id": 11,
+          "content": [
+            { "type": "text", "value": "Kepler-452b is sometimes called Earth’s 'cousin' due to its similar size and distance from its star." }
+          ]
+        },
+        {
+          "id": 12,
+          "content": [
+            { "type": "video", "src": "/path_to_kepler452b_video.mp4" },
+            { "type": "text", "value": "Watch this video about Kepler-452b's discovery and significance." }
+          ]
+        },
+        {
+          "id": 13,
+          "content": [
+            { "type": "quiz",
+              "question": "Why is Kepler-452b considered special?",
+              "options": ["It is larger than Earth", "It orbits a star similar to the Sun", "It is in the habitable zone", "All of the above"],
+              "correctAnswer": 3
+            }
+          ]
+        }
       ]
-  },
-  {
-      "level": 2,
-      "title": "Exoplanet Research: A History of Discovery",
-      "slides": [
-          {
-              "id": 1,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "The idea of innumerable worlds existing in the cosmos dates back to ancient Greek civilization."
-                  }
-              ]
-          },
-          {
-              "id": 2,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "The first widely recognized exoplanet was discovered in the 1990s, marking the transition from speculation to scientific inquiry."
-                  }
-              ]
-          },
-          {
-              "id": 3,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "Improvements in Doppler measurements from the 1950s to the 1970s laid the groundwork for discovering exoplanets. Key figures like Michel Mayor and Didier Queloz developed techniques to measure radial velocity, enabling the detection of planets around other stars."
-                  }
-              ]
-          },
-          {
-              "id": 4,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "Techniques included advanced spectrometry and careful analysis of stellar light fluctuations, which improved accuracy in detecting exoplanets."
-                  }
-              ]
-          },
-          {
-              "id": 5,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "The Vulcan project was tied to the developing Kepler mission, highlighting collaboration in exoplanet research."
-                  }
-              ]
-          },
-          {
-              "id": 6,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "The first confirmed exoplanet, 51 Peg b, was a major breakthrough discovered in 1995, leading to the discovery of additional exoplanets like 70 Vir b and 47 UMa b through radial velocity methods."
-                  }
-              ]
-          },
-          {
-              "id": 7,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "The cases of HD 114762 b and Cep b showcase the diversity of exoplanets. HD 114762 b is a gas giant discovered through radial velocity, while Cep b is notable for its discovery using transit photometry."
-                  }
-              ]
-          },
-          {
-              "id": 8,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "Recent discoveries, like those from the TESS mission, highlight the ongoing growth of exoplanet research and the potential for finding Earth-like planets."
-                  }
-              ]
-          }
-      ]
-  },
-  {
-      "level": 3,
-      "title": "PSR B1257+12 and the First Confirmed Planets Beyond the Solar System",
-      "slides": [
-          {
-              "id": 1,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "The Arecibo Observatory played a vital role in discovering the first confirmed extrasolar planets in the early 1990s."
-                  }
-              ]
-          },
-          {
-              "id": 2,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "Timing measurements of PSR B1257+12 helped confirm the existence of its planets using precise pulse arrival times."
-                  }
-              ]
-          },
-          {
-              "id": 3,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "The confirmed planets around PSR B1257+12 opened new avenues for understanding planetary systems outside our own."
-                  }
-              ]
-          },
-          {
-              "id": 4,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "These discoveries demonstrated that planets could exist in extreme environments, challenging traditional views of habitability."
-                  }
-              ]
-          }
-      ]
-  },
-  {
-      "level": 4,
-      "title": "The Naming of Extrasolar Planets",
-      "slides": [
-          {
-              "id": 1,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "The naming of astronomical objects has a rich history, influencing how exoplanets are designated."
-                  }
-              ]
-          },
-          {
-              "id": 2,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "Exoplanets inherited the naming conventions from their host stars, often using lowercase Roman suffixes."
-                  }
-              ]
-          },
-          {
-              "id": 3,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "The IAU (International Astronomical Union) has established rules for naming exoplanets, allowing for a systematic approach while incorporating public engagement."
-                  }
-              ]
-          },
-          {
-              "id": 4,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "Recent efforts by the IAU have involved the public in naming exoplanets through campaigns, enhancing community interest and participation in astronomy."
-                  }
-              ]
-          },
-          {
-              "id": 5,
-              "content": [
-                  {
-                      "type": "text",
-                      "value": "These initiatives have helped bridge the gap between scientific communities and the public, fostering a greater appreciation for astronomical discoveries."
-                  }
-              ]
-          }
-      ]
-  }
-]
+    }
+  ]

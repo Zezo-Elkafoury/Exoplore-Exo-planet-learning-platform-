@@ -7,10 +7,10 @@ import Image from 'next/image';
 
 const features = [
   {
-    title: "Well-Divided Content",
-    description: "We break down complex concepts into smaller, interconnected parts, making them easier to understand and explore in depth.",
-    image: "/features/content.png",
-    link: "/levels"
+    title: "Gravity Quest",
+    description: "Wonder how someone will jump in another planet , we made a game for you to try.",
+    image: "/features/gravity.png",
+    link: "/gravity-game"
   },
   {
     title: "Exoplanets Gallery",
@@ -23,7 +23,20 @@ const features = [
     description: "Input details for your own imaginary planet, and our tool will find the most similar real planet, sparking curiosity and discovery.",
     image: "/features/imagine.png",
     link: "/imagine"
-  }
+  },
+  {
+    title: "Well-Divided Content",
+    description: "We break down complex concepts into smaller, interconnected parts, making them easier to understand and explore in depth.",
+    image: "/features/content.png",
+    link: "/levels"
+  },
+  {
+    title: "Habitability Score",
+    description: "Try adjusting a few variables to see how Habitability works, but keep in mind that this is not entirely accurate.",
+    image: "/features/h-score.png",
+    link: "/h-score"
+  },
+  
 ];
 
 const FeatureBox = ({ title, description, image, link, index }) => {
